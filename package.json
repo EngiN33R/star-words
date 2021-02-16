@@ -1,0 +1,61 @@
+{
+  "name": "language-game",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-spring/core": "^9.0.0-beta.33",
+    "@react-spring/three": "^9.0.0-beta.33",
+    "@react-spring/web": "^9.0.0-beta.34",
+    "@tweenjs/tween.js": "^18.3.1",
+    "chroma-js": "^2.0.6",
+    "graphql": "^14.5.8",
+    "graphql.macro": "^1.4.2",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.18.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "react-scripts": "3.2.0",
+    "react-three-fiber": "^3.0.7",
+    "redux": "^4.0.4",
+    "stats.js": "^0.17.0",
+    "styled-components": "^4.4.0",
+    "three": "^0.109.0",
+    "zustand": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
